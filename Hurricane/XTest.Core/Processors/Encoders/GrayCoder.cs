@@ -71,7 +71,24 @@ namespace Hurricane.XTest.Core.Processors.Encoders
         }
         private IQuestionEntity Decoder()
         {
-            throw new Exception();
+            IQuestionEntity questionEntity = Encoder();
+
+            questionEntity.Description = "Закодируйте сообщение";
+
+            BaseValue answer = questionEntity.Question as BaseValue;
+            answer.Value = questionEntity.Answer.Value;
+
+            StringBuilder question = new StringBuilder();
+           
+            // Декодирую значение из вопроса
+            String result = BinStringFormat(Convert.ToString(Grey2Bin(Convert.ToByte(questionEntity.Question.Value)), 2));
+
+            questionEntity.Question = new BaseValue()
+            { Value = result };
+
+            questionEntity.Answer = answer;
+
+            return questionEntity;
         }
         //n -- требуемая длина кода,
         //m -- указатель на массив, способный хранить
@@ -98,8 +115,32 @@ namespace Hurricane.XTest.Core.Processors.Encoders
             return 0;
         }
 
-        
+        /// <summary>
+        /// преобразование бинарной строки в форматированную на 3 разряда
+        /// </summary>
+        static String BinStringFormat(String s)
+        {
+            if (s.Length == 3) return s;
+            if (s.Length == 2) return "0" + s;
+            return "00" + s;
+        }
+        /// <summary>
+        ///  конвертер из кода грея в обычное число
+        /// </summary>
+        static Byte Grey2Bin(Byte num)
+        {
+            Byte res = 0;
+            while (num > 0)
+            {
+                res ^= num;
+                num >>= 1;
+            }
+            return res;
+        }
     }
 
-    
+
 }
+
+    
+
