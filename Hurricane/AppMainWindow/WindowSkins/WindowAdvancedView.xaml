@@ -156,16 +156,10 @@
 
                         </TreeViewItem>
                         <TreeViewItem Header="{DynamicResource NonbinaryCodes}">
-                            <!--<TreeViewItem Header="{DynamicResource EasyReturt}"/>-->
+                            <TreeViewItem Header="{DynamicResource EasyReturt}"/>
                             <TreeViewItem Header="{DynamicResource Iterative}"/>
                             <TreeViewItem Header="{DynamicResource PrimaryNonDouble}"/>
-                            <TreeViewItem Header="{DynamicResource CheckQ}"/>
-                            
-                            
-                            
-                            
-
-
+                            <TreeViewItem Header="{DynamicResource CheckQ}"/>  
                         </TreeViewItem>
                         <TreeViewItem Header="{DynamicResource OtherCodes}">
                             <!--<TreeViewItem Header="{DynamicResource Greu}"/>-->
