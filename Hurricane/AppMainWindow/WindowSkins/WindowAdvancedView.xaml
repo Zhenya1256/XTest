@@ -139,6 +139,7 @@
                         <TreeViewItem Header="{DynamicResource SystematicCodes}">
 
                             <TreeViewItem Header="{DynamicResource Ellieas}"/>
+							<TreeViewItem Header="{DynamicResource Varshamov}"/>
                             <TreeViewItem Header="{DynamicResource RidaMallera}"/>
                             <TreeViewItem Header="{DynamicResource Systematic}"/>
                             
