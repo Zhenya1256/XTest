@@ -41,7 +41,6 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         private IQuestionEntity Encoder()
         {
-
             IQuestionEntity questionEntity = new QuestionEntity();
             questionEntity.QuestionType = QuestionType.Ellieas;
             questionEntity.CodeType = CodeType;
@@ -85,12 +84,12 @@ namespace Hurricane.XTest.Core.Processors.Encoders
             questionEntity.Answer = new BaseValue()
             { Value = answer.ToString() };
 
-            questionEntity.Question = new MatrixValue()
-            {
-                Matrix = matrix.Select(p=>p.Select(s=>s.ToString()).ToArray()).ToArray()
-            };
+			questionEntity.Question = new MatrixValue()
+			{
+				Matrix = matrix.Select(p => p.Select(s => s.ToString()).ToArray()).ToArray()
+			};
 
-            return questionEntity;
+			return questionEntity;
         }
 
         private IQuestionEntity Decoder()
