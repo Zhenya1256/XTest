@@ -236,7 +236,7 @@
     <system:String x:Key="Test">Тести</system:String>
     <system:String x:Key="AppTheme">Тема додатка</system:String>
     <system:String x:Key="KeyboardShortcuts">Гарячі клавіші</system:String>
-    <system:String x:Key="DDC">ДДК</system:String>
+    <system:String x:Key="DDC">ДДК код</system:String>
     <system:String x:Key="AccentColorString">Колір</system:String>
     <system:String x:Key="View">Інтерфейс</system:String>
     <system:String x:Key="UseThinHeaders">Вузькі заголовки</system:String>

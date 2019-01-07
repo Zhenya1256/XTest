@@ -250,7 +250,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.Ellieas;
                 //_currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("ДДК".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("ДДК код".ToLower()))
             {
                 questionType = QuestionType.DDC;
                 //_currentGrid.Children.Add(new DDCView(_currentGrid));
@@ -507,7 +507,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.Ellieas;
                 _currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("ДДК".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("ДДК код".ToLower()))
             {
                 questionType = QuestionType.DDC;
                 _currentGrid.Children.Add(new DDCView(_currentGrid));
