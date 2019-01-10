@@ -173,11 +173,11 @@
                             <!--<TreeViewItem Header="{DynamicResource Satellite}"/>-->
                             <TreeViewItem Header="{DynamicResource Recurent}"/>
                             <TreeViewItem Header="{DynamicResource DDC}"/>
+                            <TreeViewItem Header="{DynamicResource Berger}"/>
                             <!--<TreeViewItem Header="{DynamicResource Entrophy}"/>
                             <TreeViewItem Header="{DynamicResource ChannelCode}"/>
                             
-                            <TreeViewItem Header="{DynamicResource Shenon}"/>
-                            <TreeViewItem Header="{DynamicResource Berger}"/>-->
+                            <TreeViewItem Header="{DynamicResource Shenon}"/>-->
                             
 
                         </TreeViewItem>

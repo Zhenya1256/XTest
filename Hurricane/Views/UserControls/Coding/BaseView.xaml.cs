@@ -230,7 +230,7 @@ namespace Hurricane.Views.UserControls.Coding
         {
             QuestionType questionType = QuestionType.Deffoult;
 
-            if (NameTest.Text.ToLower().Equals("Код абрамсона".ToLower()))
+            if (NameTest.Text.ToLower().Equals("Код Абрамсона".ToLower()))
             {
                 questionType = QuestionType.Abramson;
               //  _currentGrid.Children.Add(new AbramsoneView(_currentGrid, "Abramson"));
@@ -255,7 +255,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.DDC;
                 //_currentGrid.Children.Add(new DDCView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Бергера".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Бергера".ToLower()))
             {
                 questionType = QuestionType.Berger;
                 //_currentGrid.Children.Add(new BergerView(_currentGrid));
@@ -275,7 +275,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.CycleHemming;
                // _currentGrid.Children.Add(new CycleHemmingView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Код файра".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Файра".ToLower()))
             {
                 questionType = QuestionType.CycleHemming;
                 //_currentGrid.Children.Add(new FairaView(_currentGrid));
@@ -487,7 +487,7 @@ namespace Hurricane.Views.UserControls.Coding
         {
             QuestionType questionType = QuestionType.Deffoult;
 
-            if (NameTest.Text.ToLower().Equals("Код абрамсона".ToLower()))
+            if (NameTest.Text.ToLower().Equals("Код Абрамсона".ToLower()))
             {
                 questionType = QuestionType.Abramson;
                 _currentGrid.Children.Add(new AbramsoneView(_currentGrid));
@@ -512,7 +512,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.DDC;
                 _currentGrid.Children.Add(new DDCView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Бергера".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Бергера".ToLower()))
             {
                 questionType = QuestionType.Berger;
                 _currentGrid.Children.Add(new BergerView(_currentGrid));
@@ -532,7 +532,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.CycleHemming;
                 _currentGrid.Children.Add(new CycleHemmingView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Код файра".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Файра".ToLower()))
             {
                 questionType = QuestionType.CycleHemming;
                 _currentGrid.Children.Add(new FairaView(_currentGrid));
