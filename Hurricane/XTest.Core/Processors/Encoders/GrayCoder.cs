@@ -42,7 +42,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
             StringBuilder answer = new StringBuilder();
 
             int[] matrix = new int[codeSize];
-            for (int j = 0; j < codeSize; j++)
+            for (int j = 0; j < matrix.Length; j++)
             {
                 int randNumber = _random.Next(0, 2);
 
