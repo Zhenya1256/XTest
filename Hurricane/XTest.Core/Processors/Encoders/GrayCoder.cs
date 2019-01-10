@@ -51,11 +51,17 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
                
             }
-
+            String res = "";
+            if(answer.Length > 0)
+            {
+                res = answer.ToString();
+            }
             questionEntity.Question = new BaseValue()
             {
-                Value = answer.ToString()
+                Value = res
             };
+           
+            
             answer.Clear();
             this.gray(codeSize, ref matrix, 0);
             for(int i =0; i < matrix.Length;i++)
