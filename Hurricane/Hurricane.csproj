@@ -508,6 +508,9 @@
     <Compile Include="Views\UserControls\Coding\SystematicHemmingView.xaml.cs">
       <DependentUpon>SystematicHemmingView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\VarshamovaView.xaml.cs">
+      <DependentUpon>VarshamovaView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Coding\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -1002,6 +1005,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Coding\SystematicHemmingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\VarshamovaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

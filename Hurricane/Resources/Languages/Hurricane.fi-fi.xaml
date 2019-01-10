@@ -25,7 +25,7 @@
     <system:String x:Key="BestMark">Найкраща оцінка:</system:String>
     <system:String x:Key="Hemming">Систематичний код Хемінга</system:String>
     <system:String x:Key="Varshamov">Варшамова</system:String>
-    <system:String x:Key="Faira">Файра</system:String>
+    <system:String x:Key="Faira">Код Файра</system:String>
     <system:String x:Key="FileInfo">tiedoston info</system:String>
     <system:String x:Key="FileLocation">sijainti</system:String>
     <system:String x:Key="Remove">poistaa</system:String>
@@ -230,8 +230,8 @@
 
     <system:String x:Key="Coding">Кодування</system:String>
     <system:String x:Key="Teory">Теорія</system:String>
-    <system:String x:Key="Abramsone">Абрамсона</system:String>
-    <system:String x:Key="BCH">БЧХ</system:String>
+    <system:String x:Key="Abramsone">Код Абрамсона</system:String>
+    <system:String x:Key="BCH">Код БЧХ</system:String>
     <system:String x:Key="Appearance">Вигляд</system:String>
     <system:String x:Key="Test">Тести</system:String>
     <system:String x:Key="AppTheme">Тема додатка</system:String>
@@ -242,7 +242,7 @@
     <system:String x:Key="UseThinHeaders">Вузькі заголовки</system:String>
     <system:String x:Key="TabControlTransition">Плавне відмалювання</system:String>
     <system:String x:Key="Shenon">Шенона-Фано</system:String>
-    <system:String x:Key="Berger">Бергера</system:String>
+    <system:String x:Key="Berger">Код Бергера</system:String>
     <system:String x:Key="Greu">Грея</system:String>
     <system:String x:Key="Cyclic">Циклічний код</system:String>
     <system:String x:Key="Systematic">Систематичний код</system:String>

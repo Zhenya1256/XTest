@@ -230,12 +230,12 @@ namespace Hurricane.Views.UserControls.Coding
         {
             QuestionType questionType = QuestionType.Deffoult;
 
-            if (NameTest.Text.ToLower().Equals("Абрамсона".ToLower()))
+            if (NameTest.Text.ToLower().Equals("Код Абрамсона".ToLower()))
             {
                 questionType = QuestionType.Abramson;
               //  _currentGrid.Children.Add(new AbramsoneView(_currentGrid, "Abramson"));
             }
-            else if (NameTest.Text.ToLower().Equals("БЧХ".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код БЧХ".ToLower()))
             {
                 questionType = QuestionType.BCH;
                 //_currentGrid.Children.Add(new BCHView(_currentGrid, "BCH"));
@@ -255,7 +255,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.DDC;
                 //_currentGrid.Children.Add(new DDCView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Бергера".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Бергера".ToLower()))
             {
                 questionType = QuestionType.Berger;
                 //_currentGrid.Children.Add(new BergerView(_currentGrid));
@@ -275,7 +275,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.CycleHemming;
                // _currentGrid.Children.Add(new CycleHemmingView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Файра".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Файра".ToLower()))
             {
                 questionType = QuestionType.CycleHemming;
                 //_currentGrid.Children.Add(new FairaView(_currentGrid));
@@ -487,12 +487,12 @@ namespace Hurricane.Views.UserControls.Coding
         {
             QuestionType questionType = QuestionType.Deffoult;
 
-            if (NameTest.Text.ToLower().Equals("Абрамсона".ToLower()))
+            if (NameTest.Text.ToLower().Equals("Код Абрамсона".ToLower()))
             {
                 questionType = QuestionType.Abramson;
                 _currentGrid.Children.Add(new AbramsoneView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("БЧХ".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код БЧХ".ToLower()))
             {
                 questionType = QuestionType.BCH;
                 _currentGrid.Children.Add(new BCHView(_currentGrid));
@@ -512,7 +512,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.DDC;
                 _currentGrid.Children.Add(new DDCView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Бергера".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Бергера".ToLower()))
             {
                 questionType = QuestionType.Berger;
                 _currentGrid.Children.Add(new BergerView(_currentGrid));
@@ -532,7 +532,7 @@ namespace Hurricane.Views.UserControls.Coding
                 questionType = QuestionType.CycleHemming;
                 _currentGrid.Children.Add(new CycleHemmingView(_currentGrid));
             }
-            else if (NameTest.Text.ToLower().Equals("Файра".ToLower()))
+            else if (NameTest.Text.ToLower().Equals("Код Файра".ToLower()))
             {
                 questionType = QuestionType.CycleHemming;
                 _currentGrid.Children.Add(new FairaView(_currentGrid));
@@ -554,6 +554,7 @@ namespace Hurricane.Views.UserControls.Coding
             }
             else if (NameTest.Text.ToLower().Equals("Грея".ToLower()))
             {
+                questionType = QuestionType.Gray;
                 _currentGrid.Children.Add(new GrayView(_currentGrid));
             }
             else if (NameTest.Text.ToLower().Equals("Ітеративний код".ToLower()))
@@ -580,6 +581,7 @@ namespace Hurricane.Views.UserControls.Coding
             }
             catch(Exception ex)
             {
+                MessageBox.Show(ex.Message);
             }
 
         }

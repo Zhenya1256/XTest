@@ -20,7 +20,7 @@
     <system:String x:Key="FileInfo">Информация о файле</system:String>
     <system:String x:Key="FileLocation">Расположение файла</system:String>
     <system:String x:Key="Remove">Удалить</system:String>
-    <system:String x:Key="NameTest">имя теста:</system:String>
+    <system:String x:Key="NameTest">Имя теста:</system:String>
     <system:String x:Key="NumberQuestions">Количество вопросов:</system:String>
     <system:String x:Key="NumberCorrectQuestions">Количество верных ответов:</system:String>
     <system:String x:Key="Trynumber">Количество попыток:</system:String>
@@ -38,7 +38,7 @@
     <system:String x:Key="NowPlaying">Сейчас играет</system:String>
     <system:String x:Key="Teory">Теория</system:String>
     <system:String x:Key="BaseStartTest">Начать</system:String>
-    <system:String x:Key="NextTest">Далие</system:String>
+    <system:String x:Key="NextTest">Далее</system:String>
     <system:String x:Key="Coding">Кодирование</system:String>
     <system:String x:Key="Presets">Настройки по умолчанию</system:String>
     <system:String x:Key="Bass">Bass</system:String>
