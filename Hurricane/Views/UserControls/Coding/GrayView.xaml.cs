@@ -46,6 +46,7 @@ namespace Hurricane.Views.UserControls.Coding
             QuestionText.Text = _currentQuestionEntity?.Question.Value;
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
+            
         }
 
         private void StaertTest_Click(object sender, RoutedEventArgs e)

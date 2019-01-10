@@ -54,7 +54,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
             questionEntity.Question = new BaseValue()
             {
-                Value = answer.ToString()
+                Value = answer?.ToString()
             };
             answer.Clear();
             this.gray(codeSize, ref matrix, 0);
@@ -63,7 +63,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
                 answer.Append(matrix[i]);
             }
             questionEntity.Answer = new BaseValue()
-            { Value = answer.ToString() };
+            { Value = answer?.ToString() };
 
            
 
