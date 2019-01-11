@@ -57,7 +57,7 @@
             <ListBoxItem Content="{DynamicResource Varshamov}"/>
         </ListBox>
         <TabControl x:Name="TabControl"
-                    Grid.Column="1"
+                    Grid.Column="1" FontSize="14" Margin="15 0"
                     SelectedIndex="{Binding SelectedTab}">
             <TabControl.Resources>
                 <Style TargetType="TabItem">

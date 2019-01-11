@@ -45,8 +45,10 @@ namespace Hurricane.Views.UserControls.Coding
             }
             var temp = MainHistoryEntity.CodingHistorys?.FirstOrDefault(p => p.NameTest ==
                 questionType.ToString());
-            DateTest.Text += temp?.TestHistorys?.Last()?.CreateTiem.Date;
+            DateTest.Text += " "+temp?.TestHistorys?.Last()?.CreateTiem.Date.ToString("MM.dd.yyyy");
+            BestMark.Text += " ";
             BestMark.Text+= temp?.TestHistorys?.Max(p=>p.Mark)??0;
+            Try.Text += " ";
             Try.Text +=    temp?
               .TestHistorys?.Count()??0;
             _currentGrid = currentGrid;

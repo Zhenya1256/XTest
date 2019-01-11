@@ -37,7 +37,6 @@ namespace Hurricane.Views.UserControls.Coding
             _questionEntities = _generateProcess.GetQuestions(QuestionType.Varshamova).Data;
             _currentQuestionEntity = _questionEntities.FirstOrDefault(p => p.StateType == StateType.Default);
             DescriptionText.Text = _currentQuestionEntity?.Description;
-            InitMatrix();
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
         }
@@ -66,7 +65,6 @@ namespace Hurricane.Views.UserControls.Coding
 
             if (_currentQuestionEntity != null)
             {
-                InitMatrix();
                 DescriptionText.Text = _currentQuestionEntity?.Description;
 
                 number++;
@@ -77,64 +75,6 @@ namespace Hurricane.Views.UserControls.Coding
             {
                 _grid.Children.Clear();
                 _grid.Children.Add(new ResultView(_grid, this, QuestionType.Ellieas.ToString()));
-            }
-        }
-
-        private void InitMatrix()
-        {
-            MatrixValue matrix = (MatrixValue)_currentQuestionEntity.Question;
-            if (QuestionMatrix.Children.Count == 0)
-            {
-                for (int i = 0; i < matrix.Matrix.Length + 1; i++)
-                {
-                    QuestionMatrix.RowDefinitions.Add(new RowDefinition()
-                    { Height = new GridLength(1, GridUnitType.Star) });
-                    QuestionMatrix.ColumnDefinitions.Add(new ColumnDefinition()
-                    {
-                        Width = new GridLength(1, GridUnitType.Star)
-                    });
-                }
-            }
-            else
-            {
-                _textAnswer.Clear();
-                QuestionMatrix.Children.Clear();
-            }
-
-            for (int i = 0; i < matrix.Matrix.Length; i++)
-            {
-                for (int j = 0; j < matrix.Matrix[i].Length; j++)
-                {
-
-                    TextBlock textBlock = new TextBlock();
-                    textBlock.IsEnabled = false;
-                    textBlock.Margin = new Thickness(5);
-                    textBlock.FontSize = 17;
-                    textBlock.Text = matrix.Matrix[i][j];
-                    QuestionMatrix.Children.Add(textBlock);
-
-                    Grid.SetRow(textBlock, i);
-                    Grid.SetColumn(textBlock, j);
-                }
-            }
-
-            for (int i = 0; i < matrix.Matrix.Length + 1; i++)
-            {
-                for (int j = 0; j < matrix.Matrix.Length + 1; j++)
-                {
-                    if (i != j && (matrix.Matrix.Length == i || matrix.Matrix.Length == j))
-                    {
-                        TextBox textBlock = new TextBox();
-
-                        textBlock.Margin = new Thickness(5);
-                        textBlock.FontSize = 17;
-                        textBlock.Text = "0";
-                        QuestionMatrix.Children.Add(textBlock);
-                        _textAnswer.Add(textBlock);
-                        Grid.SetRow(textBlock, i);
-                        Grid.SetColumn(textBlock, j);
-                    }
-                }
             }
         }
     }
