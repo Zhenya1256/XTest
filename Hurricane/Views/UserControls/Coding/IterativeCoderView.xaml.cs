@@ -34,13 +34,14 @@ namespace Hurricane.Views.UserControls.Coding
         private Grid _grid;
         private List<TextBox> _textAnswer;
         private List<TextBox> _textQuestions;
+        private string _name;
 
-        public IterativeCoderView(Grid grid)
+        public IterativeCoderView(Grid grid, String name)
         {
 
             InitializeComponent();
             _grid = grid;
-
+            _name = name;
             _textAnswer = new List<TextBox>();
             _textQuestions = new List<TextBox>();
             StaertTest.Click += StaertTest_Click;
@@ -119,7 +120,7 @@ namespace Hurricane.Views.UserControls.Coding
             else
             {
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this, QuestionType.Iterative.ToString()));
+                _grid.Children.Add(new ResultView(_grid, this, _name));
             }
         }
 

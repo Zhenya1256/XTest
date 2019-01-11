@@ -34,8 +34,9 @@ namespace Hurricane.Views.UserControls.Coding
         private Grid _grid;
         private List<TextBox> _textAnswer;
         private List<TextBox> _textQuestions;
+        private string _name;
 
-        public RidaMalleraView(Grid grid)
+        public RidaMalleraView(Grid grid, string name)
         {
             InitializeComponent();
             _grid = grid;
@@ -51,6 +52,7 @@ namespace Hurricane.Views.UserControls.Coding
             InitMatrix();
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
+            _name = name;
         }
 
 
@@ -117,7 +119,7 @@ namespace Hurricane.Views.UserControls.Coding
             else
             {
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this, QuestionType.RidaMallera.ToString()));
+                _grid.Children.Add(new ResultView(_grid, this, _name));
             }
         }
 

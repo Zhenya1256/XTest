@@ -25,8 +25,9 @@ namespace Hurricane.Views.UserControls.Coding
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
         private List<TextBox> _textAnswer;
+        private string _name;
 
-        public VarshamovaView(Grid grid)
+        public VarshamovaView(Grid grid, string name)
         {
             InitializeComponent();
             _grid = grid;
@@ -39,6 +40,7 @@ namespace Hurricane.Views.UserControls.Coding
             DescriptionText.Text = _currentQuestionEntity?.Description;
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
+            _name = name;
         }
 
         private void StaertTest_Click(object sender, RoutedEventArgs e)
@@ -74,7 +76,7 @@ namespace Hurricane.Views.UserControls.Coding
             else
             {
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this, QuestionType.Ellieas.ToString()));
+                _grid.Children.Add(new ResultView(_grid, this, _name));
             }
         }
     }
