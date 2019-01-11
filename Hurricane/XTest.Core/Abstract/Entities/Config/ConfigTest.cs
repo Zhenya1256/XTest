@@ -60,8 +60,8 @@ namespace Hurricane.XTest.Core.Abstract.Entities.Config
             {
                 Name = "Код БЧХ",
                 GroupType = GroupType.CyclicCodes,
-                CountDecodTest = 2,
-                CountEncodTest = 1,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.BCH
             });
             TestEntities.Add(new BaseTestEntity()
@@ -92,24 +92,24 @@ namespace Hurricane.XTest.Core.Abstract.Entities.Config
             {
                 Name = "Код Грея",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 2,
-                CountEncodTest = 2,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.Gray
             });
             TestEntities.Add(new BaseTestEntity()
             {
                 Name = "Двоично-десятичный код",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 2,
-                CountEncodTest = 2,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.DDC
             });
             TestEntities.Add(new BaseTestEntity()
             {
                 Name = "Код Бергера",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 2,
-                CountEncodTest = 2,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.Berger
             });
             TestEntities.Add(new BaseTestEntity()
@@ -132,24 +132,24 @@ namespace Hurricane.XTest.Core.Abstract.Entities.Config
             {
                 Name = "Количество информации и энтропия",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 2,
-                CountEncodTest = 2,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.Entrophy
             });
             TestEntities.Add(new BaseTestEntity()
             {
                 Name = "Рекурентный код",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 2,
-                CountEncodTest = 2,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.Recyrent
             });
             TestEntities.Add(new BaseTestEntity()
             {
                 Name = "Канальные коды",
                 GroupType = GroupType.OtherСodesAndLaboratoryWork,
-                CountDecodTest = 1,
-                CountEncodTest = 1,
+                CountDecodTest = 3,
+                CountEncodTest = 3,
                 QuestionType = QuestionType.Channel
             });
             TestEntities.Add(new BaseTestEntity()

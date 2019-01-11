@@ -59,14 +59,14 @@ namespace XTest.Core.Processors.Encoders
 
                 for (int j = 0; j < 5; j++)
                 {
-                    int randNumber = _random.Next(0, 2);
+                    int randNumber = _random.Next(0, 3);
 
                     matrix[i][j] = randNumber;
 
                     tempSum += randNumber;
                 }
 
-                answer.Append(tempSum % 2);
+                answer.Append(tempSum % 3);
             }
 
             for (int i = 0; i < matrix.Length; i++)
@@ -78,7 +78,7 @@ namespace XTest.Core.Processors.Encoders
                     tempSum += matrix[j][i];
                 }
 
-                answer.Append(tempSum % 2);
+                answer.Append(tempSum % 3);
             }
 
             questionEntity.Answer = new BaseValue()
