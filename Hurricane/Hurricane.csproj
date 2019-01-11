@@ -570,6 +570,7 @@
     <Compile Include="XTest.Core\Abstract\IAnswerCheker.cs" />
     <Compile Include="XTest.Core\Abstract\Processors\AbstractFactory.cs" />
     <Compile Include="XTest.Core\Abstract\Processors\IGenerateProcess.cs" />
+    <Compile Include="XTest.Core\Const\CacheCodeName.cs" />
     <Compile Include="XTest.Core\Const\Enums\CodeType.cs" />
     <Compile Include="XTest.Core\Const\Enums\CodingType.cs" />
     <Compile Include="XTest.Core\Const\Enums\GroupType.cs" />

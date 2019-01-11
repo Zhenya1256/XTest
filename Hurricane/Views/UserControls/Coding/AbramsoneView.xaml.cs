@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using Hurricane.XTest.Core.Abstract;
 using Hurricane.XTest.Core.Abstract.Entities;
 using Hurricane.XTest.Core.Abstract.Processors;
+using Hurricane.XTest.Core.Const;
 using Hurricane.XTest.Core.Const.Enums;
 using Hurricane.XTest.Core.Entities;
 using Hurricane.XTest.Core.Processors;
@@ -32,6 +33,7 @@ namespace Hurricane.Views.UserControls.Coding
         private int number=1;
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
+       
         //private string _coding;
 
         public AbramsoneView(Grid grid)
@@ -78,7 +80,7 @@ namespace Hurricane.Views.UserControls.Coding
             {
                 JsonParser<IQuestionEntity>.SaveList.Clear();
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this));
+                _grid.Children.Add(new ResultView(_grid, this, CacheCodeName.map[QuestionType.Abramson]));
             }
         }
     }

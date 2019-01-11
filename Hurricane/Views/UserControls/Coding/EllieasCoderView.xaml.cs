@@ -33,8 +33,9 @@ namespace Hurricane.Views.UserControls.Coding
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
         private List<TextBox> _textAnswer;
+        private String _name;
 
-        public EllieasCoderView(Grid grid)
+        public EllieasCoderView(Grid grid, String name)
         {
             InitializeComponent();
             _grid = grid;
@@ -48,6 +49,7 @@ namespace Hurricane.Views.UserControls.Coding
             InitMatrix();
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
+            _name = name;
         }
 
         private void StaertTest_Click(object sender, RoutedEventArgs e)
@@ -84,7 +86,7 @@ namespace Hurricane.Views.UserControls.Coding
             else
             {
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this));
+                _grid.Children.Add(new ResultView(_grid, this, _name));
             }
         }
 

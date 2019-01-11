@@ -333,7 +333,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Ellieas".ToLower()))
             {
                 questionType = QuestionType.Ellieas;
-                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
+                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid, NameTest.Text ));
             }
             else if (NameTest.Text.ToLower().Equals("DDC".ToLower()))
             {
@@ -421,7 +421,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Эллайеса".ToLower()))
             {
                 questionType = QuestionType.Ellieas;
-                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
+                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("ДДК".ToLower()))
             {
@@ -505,7 +505,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Елайса".ToLower()))
             {
                 questionType = QuestionType.Ellieas;
-                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
+                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("ДДК код".ToLower()))
             {
