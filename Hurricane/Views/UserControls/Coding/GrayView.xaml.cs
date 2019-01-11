@@ -32,8 +32,9 @@ namespace Hurricane.Views.UserControls.Coding
         private int number = 1;
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
+        private String _name;
 
-        public GrayView(Grid grid)
+        public GrayView(Grid grid, String name)
         {
             InitializeComponent();
             _grid = grid;
@@ -46,6 +47,7 @@ namespace Hurricane.Views.UserControls.Coding
             QuestionText.Text = _currentQuestionEntity?.Question.Value;
             Number.Text = number.ToString();
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
+            _name = name;
             
         }
 
@@ -77,7 +79,7 @@ namespace Hurricane.Views.UserControls.Coding
             {
                 JsonParser<IQuestionEntity>.SaveList.Clear();
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this, QuestionType.Gray.ToString()));
+                _grid.Children.Add(new ResultView(_grid, this, _name));
             }
         }
     }

@@ -330,7 +330,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Haphmana".ToLower()))
             {
                 questionType = QuestionType.Haphmana;
-                _currentGrid.Children.Add(new HaphmanaView(_currentGrid));
+                _currentGrid.Children.Add(new HaphmanaView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Ellieas".ToLower()))
             {
@@ -350,12 +350,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Recyrent".ToLower()))
             {
                 questionType = QuestionType.Recyrent;
-                _currentGrid.Children.Add(new RecyrentView(_currentGrid));
+                _currentGrid.Children.Add(new RecyrentView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("SystematicHemming".ToLower()))
             {
                 questionType = QuestionType.SystematicHemming;
-                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid));
+                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("CycleHemming".ToLower()))
             {
@@ -371,12 +371,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("PrimaryNonDualOnes".ToLower()))
             {
                 questionType = QuestionType.PrimaryNonDualOnes;
-                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid));
+                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("ModuleCodeQ".ToLower()))
             {
                 questionType = QuestionType.ModuleCodeQ;
-                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid));
+                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("EasyReturn".ToLower()))
             {
@@ -386,17 +386,17 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Gray".ToLower()))
             {
                 questionType = QuestionType.Gray;
-                _currentGrid.Children.Add(new GrayView(_currentGrid));
+                _currentGrid.Children.Add(new GrayView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Iterative".ToLower()))
             {
                 questionType = QuestionType.Iterative;
-                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid));
+                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("RidaMallera".ToLower()))
             {
                 questionType = QuestionType.RidaMallera;
-                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid));
+                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid, NameTest.Text));
             }
 
             return questionType;
@@ -418,7 +418,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Хаффмена".ToLower()))
             {
                 questionType = QuestionType.Haphmana;
-                _currentGrid.Children.Add(new HaphmanaView(_currentGrid));
+                _currentGrid.Children.Add(new HaphmanaView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Эллайеса".ToLower()))
             {
@@ -438,12 +438,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Рекуретный".ToLower()))
             {
                 questionType = QuestionType.Recyrent;
-                _currentGrid.Children.Add(new RecyrentView(_currentGrid));
+                _currentGrid.Children.Add(new RecyrentView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Систематические коды".ToLower()))
             {
                 questionType = QuestionType.SystematicHemming;
-                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid));
+                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Циклические коды".ToLower()))
             {
@@ -458,12 +458,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Первично недвоичные коды".ToLower()))
             {
                 questionType = QuestionType.PrimaryNonDualOnes;
-                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid));
+                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Код с проверкой по модулю q".ToLower()))
             {
                 questionType = QuestionType.ModuleCodeQ;
-                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid));
+                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Код с простым повторением".ToLower()))
             { 
@@ -472,15 +472,15 @@ namespace Hurricane.Views.UserControls.Coding
             }
             else if (NameTest.Text.ToLower().Equals("Грея".ToLower()))
             {
-                _currentGrid.Children.Add(new GrayView(_currentGrid));
+                _currentGrid.Children.Add(new GrayView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Итеративный код".ToLower()))
             {
-                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid));
+                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Рида Маллера".ToLower()))
             {
-                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid));
+                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid, NameTest.Text));
             }
 
             return questionType;
@@ -502,7 +502,7 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Хаффмена".ToLower()))
             {
                 questionType = QuestionType.Haphmana;
-                _currentGrid.Children.Add(new HaphmanaView(_currentGrid));
+                _currentGrid.Children.Add(new HaphmanaView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Елайса".ToLower()))
             {
@@ -522,12 +522,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Рекурентний код".ToLower()))
             {
                 questionType = QuestionType.Recyrent;
-                _currentGrid.Children.Add(new RecyrentView(_currentGrid));
+                _currentGrid.Children.Add(new RecyrentView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Систематичний код".ToLower()))
             {
                 questionType = QuestionType.SystematicHemming;
-                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid));
+                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Циклічний код".ToLower()))
             {
@@ -542,12 +542,12 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Первичні недвоїчні".ToLower()))
             {
                 questionType = QuestionType.PrimaryNonDualOnes;
-                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid));
+                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Перевірка по модулю q".ToLower()))
             {
                 questionType = QuestionType.ModuleCodeQ;
-                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid));
+                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Код з простим повторенням".ToLower()))
             {
@@ -557,15 +557,15 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("Грея".ToLower()))
             {
                 questionType = QuestionType.Gray;
-                _currentGrid.Children.Add(new GrayView(_currentGrid));
+                _currentGrid.Children.Add(new GrayView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Ітеративний код".ToLower()))
             {
-                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid));
+                _currentGrid.Children.Add(new IterativeCoderView(_currentGrid, NameTest.Text));
             }
             else if (NameTest.Text.ToLower().Equals("Ріда Маллєра".ToLower()))
             {
-                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid));
+                _currentGrid.Children.Add(new RidaMalleraView(_currentGrid, NameTest.Text));
             }
 
             return questionType;
