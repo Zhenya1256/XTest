@@ -24,18 +24,18 @@ namespace Hurricane.Views.UserControls
         private Grid _grid;
         private UserControl _userControl;
 
-        public ResultView(Grid grid, UserControl userControl)
+        public ResultView(Grid grid, UserControl userControl, string nameTest)
         {
             InitializeComponent();
             _grid = grid;
             _userControl = _userControl;
             StartTest.Click += StartTest_Click;
-            NameTest.Text += MainHistoryEntity.CodingHistorys.Last().NameTest;
-            NumberQuestions.Text += 10;
-            NumberCorrectQuestions.Text +=
+            NameTest.Text += " "+ nameTest;
+            NumberQuestions.Text += " " + 10;
+            NumberCorrectQuestions.Text += " "+
                 MainHistoryEntity.CodingHistorys.Last()
                 .TestHistorys.Last().AnswerHistorys.Count(p=>p.IsCorrect);
-            TryNumber.Text +=
+            TryNumber.Text += " "+
                       MainHistoryEntity.CodingHistorys.Last()
                 .TestHistorys.Count();
         }

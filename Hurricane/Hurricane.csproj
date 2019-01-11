@@ -505,6 +505,9 @@
     <Compile Include="Views\UserControls\Coding\RidaMalleraView.xaml.cs">
       <DependentUpon>RidaMalleraView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\SatelitesView.xaml.cs">
+      <DependentUpon>SatelitesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Coding\SystematicHemmingView.xaml.cs">
       <DependentUpon>SystematicHemmingView.xaml</DependentUpon>
     </Compile>
@@ -1002,6 +1005,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Coding\RidaMalleraView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\SatelitesView.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Coding\SystematicHemmingView.xaml">

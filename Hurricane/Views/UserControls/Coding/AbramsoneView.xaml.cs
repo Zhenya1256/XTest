@@ -78,7 +78,7 @@ namespace Hurricane.Views.UserControls.Coding
             {
                 JsonParser<IQuestionEntity>.SaveList.Clear();
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this));
+                _grid.Children.Add(new ResultView(_grid, this, QuestionType.Abramson.ToString()));
             }
         }
     }

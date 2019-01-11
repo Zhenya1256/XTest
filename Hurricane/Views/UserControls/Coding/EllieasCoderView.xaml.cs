@@ -83,8 +83,9 @@ namespace Hurricane.Views.UserControls.Coding
             }
             else
             {
+                JsonParser<IQuestionEntity>.SaveList.Clear();
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this));
+                _grid.Children.Add(new ResultView(_grid, this, QuestionType.Ellieas.ToString()));
             }
         }
 

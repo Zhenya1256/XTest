@@ -139,7 +139,7 @@
                         <TreeViewItem Header="{DynamicResource SystematicCodes}">
 
                             <TreeViewItem Header="{DynamicResource Ellieas}"/>
-							<TreeViewItem Header="{DynamicResource Varshamov}"/>
+							<!--<TreeViewItem Header="{DynamicResource Varshamov}"/>-->
                             <TreeViewItem Header="{DynamicResource RidaMallera}"/>
                             <TreeViewItem Header="{DynamicResource Systematic}"/>
                             
@@ -163,7 +163,7 @@
                             <TreeViewItem Header="{DynamicResource CheckQ}"/>  
                         </TreeViewItem>
                         <TreeViewItem Header="{DynamicResource OtherCodes}">
-                            <TreeViewItem Header="{DynamicResource Greu}"/>
+                            <!--<TreeViewItem Header="{DynamicResource Greu}"/>-->
                           
                             
 

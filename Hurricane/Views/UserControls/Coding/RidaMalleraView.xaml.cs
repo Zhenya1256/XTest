@@ -117,7 +117,7 @@ namespace Hurricane.Views.UserControls.Coding
             else
             {
                 _grid.Children.Clear();
-                _grid.Children.Add(new ResultView(_grid, this));
+                _grid.Children.Add(new ResultView(_grid, this, QuestionType.RidaMallera.ToString()));
             }
         }
 
